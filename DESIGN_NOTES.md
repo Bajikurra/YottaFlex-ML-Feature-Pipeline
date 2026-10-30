@@ -1,8 +1,8 @@
 # Design and trade-off notes
 
 1. **Point-in-time correctness:** Feature calculations filter both business event time and system availability time. This is stricter than event-time-only filtering and models what the pipeline could know at prediction time.
-2. **No label leakage:** `labels.csv` is not loaded by the pipeline. Labels should be joined after snapshots are frozen, using an explicit future label horizon.
-3. **Training/inference parity:** both public entry points call the same pure `build_features` function to reduce transformation drift.
+2. **No label leakage:** labels.csv is not loaded by the pipeline. Labels should be joined after snapshots are frozen, using an explicit future label horizon.
+3. **Training/inference parity:** both public entry points call the same pure build_features function to reduce transformation drift.
 4. **Idempotency:** stable event IDs and composite feature keys are enforced in SQLite; upserts make retries safe.
 5. **Quarantine:** rejects preserve raw input plus source row and reason. First occurrence of a duplicate key wins within a batch.
 6. **Observability:** each run records status, timestamps, row counts, duration, and failure reason.
