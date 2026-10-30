@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yottaflex-feature-pipeline"
+version = "1.0.0"
+description = "Reproducible point-in-time ML feature pipeline"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0,<3.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
