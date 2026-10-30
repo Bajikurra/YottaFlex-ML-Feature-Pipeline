@@ -121,7 +121,7 @@ input_rows = accepted_rows + rejected_rows
 
 feature_rows = number of distinct customer/as-of snapshots generated
 
-The report includes a source-to-target reconciliation section. A run with invalid rows can still complete with status `SUCCESS_WITH_REJECTS`; fatal processing errors are logged as `FAILED` and re-raised.
+The report includes a source-to-target reconciliation section. A run with invalid rows can still complete with status SUCCESS_WITH_REJECTS; fatal processing errors are logged as FAILED and re-raised.
 
 ## Idempotency, retry, and backfill
 
