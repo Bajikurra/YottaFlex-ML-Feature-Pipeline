@@ -1,0 +1,4 @@
+customer_id,label_timestamp,target_label
+c1,2025-02-01T00:00:00Z,1
+c2,2025-02-01T00:00:00Z,0
+c3,2025-02-01T00:00:00Z,0

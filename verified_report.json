@@ -1,0 +1,46 @@
+{
+  "run_id": "9ebc5a87-d342-4482-ae78-23b1ec5b34e0",
+  "status": "SUCCESS_WITH_REJECTS",
+  "started_at": "2026-10-28T10:27:05.132856+00:00",
+  "ended_at": "2026-10-28T10:27:05.176594+00:00",
+  "input_rows": 11,
+  "accepted_rows": 6,
+  "rejected_rows": 5,
+  "feature_rows_this_run": 3,
+  "duration_seconds": 0.043772,
+  "input_reconciliation_passed": true,
+  "transaction_reconciliation_passed": true,
+  "note": "Customer reference rejects are separately quarantined; transaction reconciliation compares transaction input to accepted plus rejected transaction rows.",
+  "features": [
+    {
+      "customer_id": "c1",
+      "as_of_timestamp": "2025-01-15T00:00:00+00:00",
+      "feature_version": "v1",
+      "txn_count_7d": 0,
+      "txn_amount_sum_7d": 0.0,
+      "txn_count_30d": 4,
+      "txn_amount_avg_30d": 10.625,
+      "last_txn_age_hours": 206.0
+    },
+    {
+      "customer_id": "c2",
+      "as_of_timestamp": "2025-01-15T00:00:00+00:00",
+      "feature_version": "v1",
+      "txn_count_7d": 1,
+      "txn_amount_sum_7d": 999.0,
+      "txn_count_30d": 2,
+      "txn_amount_avg_30d": 549.5,
+      "last_txn_age_hours": 157.0
+    },
+    {
+      "customer_id": "c3",
+      "as_of_timestamp": "2025-01-15T00:00:00+00:00",
+      "feature_version": "v1",
+      "txn_count_7d": 0,
+      "txn_amount_sum_7d": 0.0,
+      "txn_count_30d": 0,
+      "txn_amount_avg_30d": NaN,
+      "last_txn_age_hours": NaN
+    }
+  ]
+}

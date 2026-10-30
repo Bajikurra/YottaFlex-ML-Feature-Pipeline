@@ -1,0 +1,12 @@
+event_id,customer_id,event_timestamp,available_at,amount,event_type,source_file
+e001,c1,2025-01-01T10:00:00Z,2025-01-01T10:01:00Z,25.50,purchase,transactions.csv
+e002,c1,2025-01-03T12:00:00Z,2025-01-03T12:05:00Z,10.00,purchase,transactions.csv
+e003,c1,2025-01-04T09:00:00Z,2025-01-04T09:01:00Z,-5.00,refund,transactions.csv
+e004,c2,2025-01-02T14:00:00Z,2025-01-02T14:01:00Z,100.00,purchase,transactions.csv
+e005,c2,2025-01-08T11:00:00Z,2025-01-12T11:00:00Z,999.00,purchase,transactions.csv
+e006,c9,2025-01-05T10:00:00Z,2025-01-05T10:01:00Z,50.00,purchase,transactions.csv
+e007,c1,broken,2025-01-06T10:00:00Z,12.00,purchase,transactions.csv
+e008,c1,2025-01-06T10:00:00Z,2025-01-06T10:01:00Z,not_a_number,purchase,transactions.csv
+e009,c1,2025-01-06T10:00:00Z,2025-01-06T10:01:00Z,12.00,chargeback,transactions.csv
+e010,c1,2025-01-06T10:00:00Z,2025-01-06T10:01:00Z,12.00,purchase,transactions.csv
+e010,c1,2025-01-06T10:00:00Z,2025-01-06T10:01:00Z,12.00,purchase,transactions.csv
