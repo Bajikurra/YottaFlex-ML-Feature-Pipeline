@@ -2,11 +2,9 @@
 
 ## Automated tests
 
-Command: `pytest -q`
+Command: pytest -q
 
-```text
-[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                   [100%][0m
-[32m[32m[1m6 passed[0m[32m in 0.14s[0m[0m
+text
 Spreadsheet runtime warmup failed during python startup
 Traceback (most recent call last):
   File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
@@ -23,9 +21,9 @@ Exit code: 0
 
 ## Sample run
 
-Command: `python -m feature_pipeline.cli --data-dir data/sample --db-path output/verified_features.db --report-path output/verified_report.json --as-of 2025-01-15T00:00:00Z`
+Command: python -m feature_pipeline.cli --data-dir data/sample --db-path output/verified_features.db --report-path output/verified_report.json --as-of 2025-01-15T00:00:00Z
 
-```text
+text
 {
   "run_id": "9ebc5a87-d342-4482-ae78-23b1ec5b34e0",
   "status": "SUCCESS_WITH_REJECTS",
