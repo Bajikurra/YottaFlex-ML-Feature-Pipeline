@@ -139,20 +139,3 @@ Tests cover the happy path, empty input, malformed timestamps/amounts, missing r
 ## Performance note
 
 The generator supports 100,000+ rows. The current implementation favors clarity and deterministic behavior, using pandas and a per-customer feature calculation. For substantially larger data, optimize by sorting events once and using vectorized rolling-window operations or a SQL window-function implementation; benchmark before adding distributed processing.
-
-## Known limitations / trade-offs
-
-- This is a local reference implementation, not a production scheduler or feature store.
-- The sample label file is synthetic and deliberately not consumed by feature generation.
-- Input schema changes fail fast rather than being silently coerced.
-- Timestamp normalization assumes timezone-aware ISO-8601 values; naive timestamps are rejected.
-- The sample feature windows use event time plus availability time. A production definition should be approved with ML/business stakeholders.
-- This project demonstrates local SQLite publication, not concurrent multi-worker orchestration.
-
-## Public repository checklist
-
-1. Review every file and make sure you can explain the core logic.
-2. Run `pytest -q` and the quick-start command from a clean environment.
-3. Include the generated `output/report.json` and a small sample output (do not commit large database files unless desired).
-4. Create a **public** GitHub repository and push the source, tests, sample data, and prompt history.
-5. Open the repository URL in a private/incognito browser before submitting.
